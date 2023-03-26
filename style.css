@@ -2,13 +2,14 @@
     padding: 0;
     margin: 0;
     box-sizing: border-box;
+    scrollbar-width: none;
 }
 body{
     width: 100vw;
-    height: 100vh;
-    overflow-y: scroll;
+    height: max-content;
+    
     transition: 0.5s ease;
-    scrollbar-width: thin;
+    
 }
 .app-container{
     width: inherit;
@@ -89,7 +90,6 @@ body{
     justify-content: center;
     align-items: center;
     gap: 2rem;
- 
 }
 .user-img img{
     width: auto;
@@ -119,6 +119,15 @@ body{
 }
 .user-img:hover{
     transform: scale(1.4);
+}
+.user-img-con{
+    width: inherit;
+    height: inherit;
+    overflow: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    border-radius: 1rem;
 }
 .about{
     width: max-content;

@@ -100,7 +100,6 @@ body{
     box-sizing: border-box;
     user-select: none;
     pointer-events: none;
-    transition: 0.5s ease;
     border-radius: 1rem;
 }
 .user-img{
@@ -111,8 +110,14 @@ body{
     display: flex;
     justify-content: center;
     align-items: center;
+    background-image: url(./Bae.jpg);
+    height: 350px;
+    background-size: 100%;
+    background-repeat: no-repeat;
+    transition: 0.5s ease;
+
 }
-.user-img:hover img{
+.user-img:hover{
     transform: scale(1.4);
 }
 .about{

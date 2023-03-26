@@ -1,0 +1,143 @@
+*{
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+body{
+    width: 100vw;
+    height: 100vh;
+    overflow-y: scroll;
+    transition: 0.5s ease;
+    scrollbar-width: thin;
+}
+.app-container{
+    width: inherit;
+    height: inherit;
+}
+.nav-container{
+    width: 100vw;
+    padding: 1rem;
+    display: flex;
+    justify-content: space-between;
+    position: fixed;
+    z-index: 2;
+    top: 0;
+    height: 4rem;
+}
+.app-name{
+    font-size: 1.4rem;
+}
+.modes{
+    position: absolute;
+    background-color: darkslategray;
+    right: -220px;
+    top: 2.3rem;
+    width: 7rem;
+    display: flex;
+    flex-direction: column;
+    gap: 0.5rem;
+    font-size: 1.2rem;
+    padding: 0.3rem;
+    transition: 0.5s ease;
+    height: 15vh;
+}
+.left-side{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.mode{
+    cursor: pointer;
+    transition: 0.5s ease;
+
+}
+.mode:hover{
+    color: lightgray;
+}
+.dots{
+    display: flex;
+    gap: 0.3rem;
+    justify-content: center;
+    align-items: center;
+    cursor: pointer;
+}
+.dot{
+    width: 5px;
+    height: 5px;
+    border-radius: 50%;
+    transition: 0.5s ease;
+    background-color: white;
+}
+.dots:hover .dot{
+    background-color: lightgray;
+}
+.left-side:hover .modes{
+    right: 0;
+}
+.app-body-container{
+    position: absolute;
+    top: 64px;
+    width: 100vw;
+    height: calc(100vh - 70px);
+    display: flex;
+    justify-content: center;
+}
+.app-body{
+    width: max-content;
+    height: 100vh;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    gap: 2rem;
+ 
+}
+.user-img img{
+    width: auto;
+    max-width: 100%;
+    height: auto;   
+    max-height: 100%; 
+    line-height: 0;
+    box-sizing: border-box;
+    user-select: none;
+    pointer-events: none;
+    transition: 0.5s ease;
+    border-radius: 1rem;
+}
+.user-img{
+    overflow: hidden;
+    width: 356px;
+    border-radius: 1rem;
+    cursor: pointer;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+.user-img:hover img{
+    transform: scale(1.4);
+}
+.about{
+    width: max-content;
+    display: flex;
+    gap: 0.5rem;
+    height: max-content;
+    justify-content: center;
+    align-items: center;
+}
+.about-keys{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+.about-values{
+    display: flex;
+    flex-direction: column;
+    gap: 2rem;
+}
+@media screen and (max-width: 700px) {
+    .app-body{
+        flex-direction: column;
+    }
+
+
+}
+

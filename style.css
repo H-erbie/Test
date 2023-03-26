@@ -30,7 +30,6 @@ body{
 }
 .modes{
     position: absolute;
-    background-color: darkslategray;
     right: -220px;
     top: 2.3rem;
     width: 7rem;
@@ -90,6 +89,8 @@ body{
     justify-content: center;
     align-items: center;
     gap: 2rem;
+    padding: 2rem;
+
 }
 .user-img img{
     width: auto;

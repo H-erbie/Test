@@ -42,7 +42,7 @@ darkMode = () => {
     document.body.style.backgroundColor = '#111';
     document.body.style.color = 'white';
     modes.nav.style.backgroundColor = 'rgb(250, 141, 101)';
-    modes.modeCon.style.backgroundColor = 'rgb(69, 116, 116)';
+    modes.modeCon.style.backgroundColor = 'gray';
     modes.dot.forEach(dott => {
         dott.style.backgroundColor = 'white';
     })
@@ -52,7 +52,7 @@ lightMode = () => {
     document.body.style.backgroundColor = 'lightgray';
     document.body.style.color = 'black';
     modes.nav.style.backgroundColor = 'coral';
-    modes.modeCon.style.backgroundColor = 'darkslategray';
+    modes.modeCon.style.backgroundColor = 'white';
     modes.dot.forEach(dott => {
         dott.style.backgroundColor = 'black';
     })

@@ -7,7 +7,6 @@
 body{
     width: 100vw;
     height: max-content;
-    
     transition: 0.5s ease;
     
 }
@@ -83,13 +82,12 @@ body{
     justify-content: center;
 }
 .app-body{
-    width: max-content;
+    width: 95%;
     height: 100vh;
     display: flex;
     justify-content: center;
     align-items: center;
     gap: 2rem;
-    padding: 2rem;
 
 }
 .user-img img{
@@ -131,7 +129,7 @@ body{
     border-radius: 1rem;
 }
 .about{
-    width: max-content;
+    width: 86%;
     display: flex;
     gap: 0.5rem;
     height: max-content;
